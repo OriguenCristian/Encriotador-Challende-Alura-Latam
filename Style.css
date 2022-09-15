@@ -224,7 +224,7 @@ main{
     display: inline-block;
 }
 
-#textoOut{
+#textOut{
     flex-basis: calc(100% - (67px + 32px));
     font-family: 'Overpass Mono', monospace, sans-serif;
     font-size: 24px;
