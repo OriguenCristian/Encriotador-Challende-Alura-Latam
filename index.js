@@ -80,7 +80,7 @@ function desencriptar(traduccion){
 }
 
 function clipboard(){
-    const texto_out = document.querySelector("#textoOut");
+    const texto_out = document.querySelector("#textOut");
     navigator.clipboard.writeText(texto_out.value);
 }
 
