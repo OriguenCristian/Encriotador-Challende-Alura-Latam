@@ -1,3 +1,94 @@
+@media (max-height: 400px) {
+    .textOutImg > img{
+        height: 120px;
+        width: 200px;
+        margin: 40px 0 0 84px;
+    }
+}
+
+@media (max-height: 667px) {
+    .textOutImg > img{
+        height: 8rem;
+        width: 12rem;
+    }
+}
+@media (max-width: 900px) {
+    .encriptador{
+        height: 300vh;
+        flex-direction: column;
+        width: calc(100% - 80px);
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .encriptForm {
+        margin: 0;
+        width: calc(100% - 80px);
+        flex-basis: 50%;
+    }
+
+    .textIngresado > textarea {
+        height: 700px;
+    }
+
+    .textInInfo{
+        margin-bottom: 0;
+    }
+
+    .textOutSec {
+        margin: 40px 40px;
+        width: calc(100% - 80px);
+        flex-basis: 50%;
+    }
+
+    .textOutImg > img{
+        display: none;
+    }
+
+    .content > p:nth-child(2){
+        margin-top: 0;
+    }
+    
+    .content > p:nth-child(3){
+        margin-top: 16px;
+    }
+    
+}
+
+@media (max-width: 360px) {
+    .encriptador{
+        margin: 0 16px;
+        width: calc(100% - 34px);
+    }
+    .encripContenedor{
+        display: contents;
+    }
+
+    .textOutSec {
+        width: calc(100% - 32px);
+    }
+
+    .textInBtns, .mas{
+        
+    }
+
+    .textInBtns > input {
+        flex-basis: 40%;
+        padding: 23px 0
+    }
+
+    .textInBtns > input:first-child {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .textInBtns > input:last-child {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+    footer{
+        display: contents;
+    }
+}
 /*Botones Animacion*/
 @-webkit-keyframes ani {
     from {
@@ -39,4 +130,3 @@
       mask-position: 0 0;
     }
   }
-  

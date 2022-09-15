@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600&display=swap');
-body{
-    height: 100%;
+body,html{
+    padding:0;
+    margin:0;
+    height:100%;
     background-color:rgb(26, 24, 24);
     font-family: 'Overpass Mono', monospace, sans-serif;
     font-weight: 400;
@@ -10,21 +12,20 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+main{
+    padding: 2rem;
+    margin: 1rem;
+}
 .headerImg{
     position: absolute;
-    /* margin: 40px 0 0 84px; */  
 }
 .headerImg > a img{
     position: relative;
     left: 84px;
     top: 40px;
-    width: 31.09px;
+    width: 25rem;
     height: 48px;
 }
-
-/* main{
-    height: 100%;
-} */
 .contenedor {
     width: 100%;
     height: 100%;
@@ -61,7 +62,6 @@ body{
     resize: none;
     border: none;
 }
-
 
 .textIngresado > textarea:focus{
     outline: none
@@ -100,12 +100,12 @@ body{
 }
 /*Botones*/
 
-.text_in_btns{
+.textInBtns{
     display: flex;
     width: 100%;
 }
 
-.text_in_btns > .button-container-2 #enc,#des{
+.textInBtns > .buttonContainer2 #enc,#des{
     flex-basis: 50%;
     height: 67px;
     border: 1px solid #0A3871;
@@ -118,20 +118,20 @@ body{
     margin: 2px;
 }
 
-.text_in_btns .button-container-2 #enc{
+.textInBtns .buttonContainer2 #enc{
     font-family: 'Overpass Mono', monospace;
     margin-right: 2px;
     background-color:#0A3871;
     color: #FFF;
 
 }
-.text_in_btns .button-container-2 #des{
+.textInBtns .buttonContainer2 #des{
     font-family: 'Overpass Mono', monospace;
     margin-left: 3px;
     background-color:#D8DFE8;
     color: #0A3871;
 }
-.button-container-2 {
+.buttonContainer2 {
     position: relative;
     overflow: hidden;
     border: 1px solid #0A3871;
@@ -140,7 +140,7 @@ body{
     margin: 3px;
   }
   
-  .button-container-2 button {
+  .buttonContainer2 button {
     letter-spacing: 1px;
     background: #000;
     -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
@@ -154,7 +154,7 @@ body{
     animation: ani2 1s steps(29) forwards;
     
   }
-  .button-container-2 button:hover {
+  .buttonContainer2 button:hover {
     -webkit-animation: ani 1s steps(29) forwards;
     animation: ani 1s steps(29) forwards;
     transform: scale(1.05);
@@ -171,12 +171,12 @@ body{
     margin-top: 23px;
     overflow: hidden;
   }
-.text_out_sec{
+.textOutSec{
     margin: 40px 40px;
     flex-basis: calc(35% - 80px);
 }
 
-.out_content{
+.outContent{
     position: relative;
     height: 100%;
     background-color: #FFF;
@@ -213,18 +213,18 @@ body{
     text-align: center;
 }
 
-.text_out_img{
+.textOutImg{
     text-align: center;
 }
 
-.text_out_img > img{
-    width: px;
+.textOutImg > img{
+    width: 30px;
     height: 300px;
     object-fit: cover;
     display: inline-block;
 }
 
-#texto_out{
+#textoOut{
     flex-basis: calc(100% - (67px + 32px));
     font-family: 'Overpass Mono', monospace, sans-serif;
     font-size: 24px;
@@ -269,4 +269,10 @@ body{
     color: #aeb5bd;
 
 }
-
+footer{
+    margin-top: 100px;
+    position: absolute;
+    height: max-content;
+    width: max-content;
+    left: 352px;
+}
