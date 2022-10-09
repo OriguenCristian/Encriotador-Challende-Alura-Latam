@@ -13,17 +13,16 @@ body,html{
     background-attachment: fixed;
 }
 main{
-    padding: 2rem;
     margin: 1rem;
 }
 .headerImg{
-    position: absolute;
+    position:relative;
 }
 .headerImg > a img{
     position: relative;
     left: 84px;
-    top: 40px;
-    width: 25rem;
+    top: 54px;
+    width: 2rem;
     height: 48px;
 }
 .contenedor {
@@ -270,9 +269,8 @@ main{
 
 }
 footer{
-    margin-top: 100px;
     position: absolute;
     height: max-content;
-    width: max-content;
-    left: 352px;
+    width: 100%;
+    text-align: center;
 }
